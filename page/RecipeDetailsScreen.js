@@ -122,26 +122,22 @@
 //   );
 // }
 
+import { AntDesign, Entypo, Feather, FontAwesome6, Octicons } from "@expo/vector-icons";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useNavigation } from "@react-navigation/native";
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import {
+  Alert,
   Image,
   ScrollView,
+  StatusBar,
+  StyleSheet,
   Text,
   TouchableOpacity,
   View,
-  Alert,
-  StyleSheet,
-  StatusBar,
 } from "react-native";
-import { Entypo } from "@expo/vector-icons";
-import { Feather } from "@expo/vector-icons";
-import { useNavigation } from "@react-navigation/native";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import axios from "axios";
 import Loading from "../component/Loading";
-import { FontAwesome6 } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons";
-import { Octicons } from "@expo/vector-icons";
 // import YoutubeIframe from "react-native-youtube-iframe";
 
 export default function RecipeDetailsScreen(props) {
